@@ -8,7 +8,6 @@ import Error from "./Error";
 export default function Hero() {
   const semester = useParams();
   const pathname = useLocation().pathname;
-  console.log(Data[semester.semType]);
   return (
     <>
       <Poster />
@@ -62,16 +61,17 @@ export default function Hero() {
         ) : null}
         <div className=" sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {
-          // Data[semester.semType] &&
+            // Data[semester.semType] &&
             Data[semester.semType ? semester.semType : "sem1"]?.map(
-              (value, index) => {
+              (value,i) => {
                 return (
                   <>
-                    <SubjectCard key={index} data={value} />
+                    <SubjectCard key={i} data={value} />
                   </>
                 );
               }
-            )}
+            )
+          }
         </div>
       </div>
     </>

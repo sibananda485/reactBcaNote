@@ -8,7 +8,16 @@ export default function Notes() {
   return (
     <>
       <div className="mx-auto max-w-7xl px-3">
-        <h1 className="my-4 text-lg"><Link className="text-blue-600" to="/">Home</Link> / <Link className="text-blue-600" to={`/${params.semType}`}>{params.semType}</Link> / {params.sub} </h1>
+        <h1 className="my-4 text-lg">
+          <Link className="text-blue-600" to="/">
+            Home
+          </Link>{" "}
+          /{" "}
+          <Link className="text-blue-600" to={`/${params.semType}`}>
+            {params.semType}
+          </Link>{" "}
+          / {params.sub}{" "}
+        </h1>
         <div className="space-y-3">
           {Data[params.semType]
             .find((value) => value.path === params.sub)
