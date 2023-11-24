@@ -1,13 +1,8 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.poster{
+    background: linear-gradient(rgba(15, 23, 43, .8), rgba(15, 23, 43, .8)), url("https://w0.peakpx.com/wallpaper/451/359/HD-wallpaper-studying-with-coffee-study-working-hard-calculator-laptop-room-set-up.jpg");
+    background-size: cover;
 }
