@@ -12,10 +12,10 @@ export default function Hero() {
     <>
       <Poster />
       <div className="mx-auto max-w-7xl text-center px-3 mb-20">
-        <h2 className="text-3xl my-10 font-semibold">Choose Semester</h2>
-        <ul className="flex mb-5 sm:mb-10 w-fit mx-auto">
+        <h2 id="1" className="text-3xl my-10 font-semibold">Choose Semester</h2>
+        <ul className="flex mb-5 w-[90%] overflow-x-auto sm:mb-10 sm:w-fit mx-auto">
           <li
-            className={`sm:text-lg  rounded-ss rounded-se border-b-green-800 ${
+            className={`sm:text-lg whitespace-nowrap rounded-ss rounded-se border-b-green-800 ${
               pathname === "/" || pathname === "/sem1"
                 ? "border border-green-800 border-b-0 "
                 : "border-b"
@@ -25,7 +25,7 @@ export default function Hero() {
             <Link to="/"> Sem 1 </Link>
           </li>
           <li
-            className={`sm:text-lg  rounded-ss rounded-se border-b-green-800 ${
+            className={`sm:text-lg whitespace-nowrap rounded-ss rounded-se border-b-green-800 ${
               pathname === "/sem2"
                 ? "border border-green-800 border-b-0 "
                 : "border-b"
@@ -35,7 +35,7 @@ export default function Hero() {
             <Link to="/sem2"> Sem 2 </Link>
           </li>
           <li
-            className={`sm:text-lg  rounded-ss rounded-se border-b-green-800 ${
+            className={`sm:text-lg whitespace-nowrap rounded-ss rounded-se border-b-green-800 ${
               pathname === "/sem3"
                 ? "border border-green-800 border-b-0 "
                 : "border-b"
@@ -45,7 +45,7 @@ export default function Hero() {
             <Link to="/sem3"> Sem 3 </Link>
           </li>
           <li
-            className={`sm:text-lg  rounded-ss rounded-se border-b-green-800 ${
+            className={`sm:text-lg whitespace-nowrap rounded-ss rounded-se border-b-green-800 ${
               pathname === "/sem4"
                 ? "border border-green-800 border-b-0 "
                 : "border-b"
@@ -53,6 +53,26 @@ export default function Hero() {
           >
             {" "}
             <Link to="/sem4"> Sem 4 </Link>
+          </li>
+          <li
+            className={`sm:text-lg whitespace-nowrap rounded-ss rounded-se border-b-green-800 ${
+              pathname === "/sem5"
+                ? "border border-green-800 border-b-0 "
+                : "border-b"
+            } px-3 py-1`}
+          >
+            {" "}
+            <Link to="/sem5"> Sem 5 </Link>
+          </li>
+          <li
+            className={`sm:text-lg whitespace-nowrap rounded-ss rounded-se border-b-green-800 ${
+              pathname === "/sem6"
+                ? "border border-green-800 border-b-0 "
+                : "border-b"
+            } px-3 py-1`}
+          >
+            {" "}
+            <Link to="/sem6"> Sem 6 </Link>
           </li>
         </ul>
         {semester.semType !== undefined &&

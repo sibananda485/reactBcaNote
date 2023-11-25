@@ -4,6 +4,10 @@ import Data from "../Data";
 import NoteCard from "./NoteCard";
 
 export default function Notes() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Optional: add smooth scrolling behavior
+  });
   const params = useParams();
   return (
     <>
@@ -13,7 +17,7 @@ export default function Notes() {
             Home
           </Link>{" "}
           /{" "}
-          <Link className="text-blue-600" to={`/${params.semType}`}>
+          <Link className="text-blue-600" to={`/${params.semType}#1`}>
             {params.semType}
           </Link>{" "}
           / {params.sub}{" "}

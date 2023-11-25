@@ -28,7 +28,7 @@ export default function Contact() {
 
         <p className="mb-6 text-lg">
           Connect with sibananda: <br />
-          <a className="text-green-800" href="https://github.com/sibananda485">
+          <a className="text-green-800" href="https://wa.me/+918433980976?text=Hii%20Shiva!,%20i%27m%20interested%20for%20a%20new%20project.">
             Whatsapp |
           </a>
           <a className="text-blue-800" href="https://www.linkedin.com/in/">
@@ -39,7 +39,7 @@ export default function Contact() {
             {" "}
             Gmail |
           </a>
-          <a className="text-teal-800" href="https://github.com/sibananda485">
+          <a className="text-teal-800" href="https://twitter.com/sibananda485">
             {" "}
             Twitter |
           </a>
